@@ -1,0 +1,38 @@
+
+# define the C compiler to use
+CC = gcc
+## How to Compile:
+'gcc say.c -o say'
+
+## How to Execute:
+'./say -e "ls -l"
+
+#Run a file 
+./say -e "ls -l"
+
+CC = gcc
+Hw3: say.o gcc
+	gcc say.c -o say
+
+#OBJ= say.o
+#LINKOBH= say.o
+
+
+say.o: say.c
+	$(CC) -c say.c -o say.o $(CFLAGS)
+
+#working file
+scp C:\Users\sayle\OneDrive\Desktop\SP\say.c saylee30@moat.cs.uab.edu:~/CS332/lab
+
+
+
+##Reference
+## Done with the help of lecture-20 file
+## https://www.youtube.com/watch?v=KArSxvz9XlA 
+## https://www.geeksforgeeks.org/getopt-function-in-c-to-parse-command-line-arguments/
+## Sample Assignment 2
+
+
+
+
+
